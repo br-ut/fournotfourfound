@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404Found</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic,100,100italic' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <button id="rerender" style="position: absolute;">Change theme</button>
+<!-- partial:index.partial.html -->
+<div class="logo_align">
+  <img src="./250res.png" alt="logo">
+</div>
+<div class="form_search">
+  <select id="search_engine" name="search_engine">
+    <option value="Google">Google</option>
+    <option value="Bing">Bing</option>
+    <option value="Yandex">Yandex</option>
+    <option value="DuckDuckGo">DuckDuckGo</option>
+    <option value="StartPage">StartPage</option>
+    <option value="Infinity">Infinity</option>
+    <option value="SearX">SearX</option>
+    <option value="Spot">Spot</option>
+    <option value="Qwant">Qwant</option>
+    <option value="SearchEncrypt">SearchEncrypt</option>
+    <option value="Invidious">Invidious</option>
+    <option value="TorrentZ">TorrentZ</option>
+    <option value="Bullmask">Bullmask</option>
+    <option value="MamontFTP">MamontFTP</option>
+    <option value="Alternative">Alternative</option>
+  </select>
+  <input type="text" id="search_query" onfocus="this.value=''" name="search_query" value="Enter your Query here...">
+  <input type="button" value="Go" onclick="search_engine_fn();">
+</div>
+<div class="icons_align">
+<ul class="dropdown">
+<li><a href="#"><i class="fa fa-book fa-lg"></i></a>
+  <ul class="sub_menu">
+    <li><a href="https://www.reuters.com/">Reuters</a></li>
+    <li><a href="https://www.apnews.com/">APNews</a></li>
+    <li><a href="https://knewz.com/">KNewz</a></li>
+    <li><a href="https://www.allsides.com/">AllSlides</a></li>
+    <li><a href="https://www.citizenfreepress.com/">FreePress</a></li>
+    <li><a href="https://www.zerohedge.com/">ZeroHedge</a></li>
+    <li><a href="https://news.ycombinator.com/">HackerNews</a></li>
+    <li><a href="https://lobste.rs/">Lobsters</a></li>
+    <li><a href="https://slashdot.org/">SlashDot</a></li>
+    <li><a href="https://arstechnica.com/">ArtsTechnica</a></li>
+    <li><a href="https://reclaimthenet.org/">ReclaimNet</a></li>
+    <li><a href="https://www.technadu.com/">TechNadu</a></li>
+    <li><a href="https://www.geekwire.com/">GeekWire</a></li>
+    <li><a href="https://techmeme.com/">TechMeme</a></li>
+    <li><a href="https://www.techworm.net/">TechWorm</a></li>
+    <li><a href="https://www.techradar.com/">TechRadar</a></li>
+    <li><a href="https://www.techhive.com/news/">TechHive</a></li>
+    <li><a href="https://www.afterdawn.com/">AfterDawn</a></li>
+    <li><a href="https://www.theregister.co.uk/">TheRegister</a></li>
+    <li><a href="https://www.ghacks.net/">GHacks</a></li>
+    <li><a href="https://www.zdnet.com/">ZDNet</a></li>
+    <li><a href="https://www.neowin.net/">NeoWin</a></li>
+    <li><a href="https://wccftech.com/">WccfTech</a></li>
+  </ul>
+  </li>
+<li><a href="#"><i class="fa fa-cloud fa-lg"></i></a>
+<ul class="sub_menu">
+  <li><a href="https://weboas.is/upload/">OasisUpload</a></li>
+  <li><a href="https://funkyimg.com/">FunkyIMG</a></li>
+  <li><a href="https://imgbox.com/">ImageBox</a></li>
+  <li><a href="https://imge.to/">IMGE</a></li>
+  <li><a href="https://www.pixstash.net/">PixStash</a></li>
+  <li><a href="https://postimages.org/">PostImage</a></li>
+  <li><a href="https://snipboard.io/">SnipBoard</a></li>
+  <li><a href="https://unsee.cc/">UnSee</a></li>
+  <li><a href="https://clyp.it/">Clyp</a></li>
+  <li><a href="https://melody.ml/">Melody</a></li>
+  <li><a href="https://www.remove-vocals.com/">RemoveVocal</a></li>
+  <li><a href="https://termbin.com/">TermBin</a></li>
+  <li><a href="https://www.docdroid.net/">DocDroid</a></li>
+  <li><a href="https://globalupload.io/">GloalUp</a></li>
+  <li><a href="https://permanentupload.com/">PermanentUp</a></li>
+  <li><a href="https://swarm-gateways.net/">Swarm</a></li>
+  <li><a href="https://www.mediafire.com/">MediaFire</a></li>
+  <li><a href="https://www.google.com/drive/">GoogleDrive</a></li>
+  <li><a href="https://disk.yandex.com/">Yandex</a></li>
+  <li><a href="https://fex.net/">FexNet</a></li>
+  <li><a href="https://flydebrid.com/">Flydebrid</a></li>
+  <li><a href="https://trackerslist.com/">TrackerList</a></li>
+  <li><a href="https://hyperdebrid.net/">HyperDebrid</a></li>
+    <li><a href="https://linksnappy.com/">LinkSnappy</a></li>
+    <li><a href="https://rapidgrab.pl/">RapidGrab</a></li>
+    <li><a href="https://leech.alemdarleech.com/">Alemdar</a></li>
+    <li><a href="https://juba-get.com/">JubaGet</a></li>
+    <li><a href="https://multiup.eu/">MultiUp</a></li>
+    <li><a href="https://multifilemirror.com/">FileMirror</a></li>
+    <li><a href="https://myuploadedpremium.de/">ReevOwn</a></li>
+    <li><a href="https://www.deepbrid.com/downloader">DeepBird</a></li>
+    <li><a href="https://cocoleech.com/">COCOleech</a></li>
+    <li><a href="https://vidlox.me/">Vidlox</a></li>
+    <li><a href="https://vcdn.io/">Fembed</a></li>
+    <li><a href="https://saruch.co/">Saruch</a></li>
+    <li><a href="https://mirrorace.com/">MirrorAce</a></li>
+    <li><a href="https://plik.root.gg/">Plik</a></li>
+    <li><a href="http://gounlimited.to/">GoUnlimited</a></li>
+    <li><a href="https://doodstream.com/">DoodStream</a></li>
+    <li><a href="https://protonvideo.to/">ProtonVideo</a></li>
+    <li><a href="https://mystream.to/">Mystream</a></li>
+    <li><a href="https://userscloud.com/">Usercloud</a></li>
+    <li><a href="https://uptobox.com/">UpToBox</a></li>
+    <li><a href="https://uptocloud.co/">UpToCloud</a></li>
+    <li><a href="https://alfafile.net/">alfafile</a></li>
+    <li><a href="https://www.file.io/">FileIO</a></li>
+    <li><a href="https://gofile.io/">Gofile</a></li>
+    <li><a href="https://dfile.space/">Dfile</a></li>
+    <li><a href="https://wi.to/">Wi.to</a></li>
+    <li><a href="https://www.upload.ee/">upload.ee</a></li>
+    <li><a href="https://safe.fiery.me/">SafeFiery</a></li>
+    <li><a href="https://dmca.gripe/">DMCA</a></li>
+    <li><a href="https://letsupload.co/">Letsupload</a></li>
+    <li><a href="https://ufile.io/">Uploadfile</a></li>
+    <li><a href="https://mixdrop.co/">MixDrop</a></li>
+    <li><a href="https://file.al/">File.al</a></li>
+    <li><a href="https://en.fromsmash.com/">Smash</a></li>
+    <li><a href="https://mega.nz/">mega.nz</a></li>
+    <li><a href="https://www.swisstransfer.com/en">SwissXfer</a></li>
+    <li><a href="https://envelop.app/">Envelop</a></li>
+    <li><a href="https://1fichier.com/">1Fichier</a></li>
+    <li><a href="https://racaty.com/">Racaty</a></li>
+</ul>
+</li>
+<li><a href="#"><i class="fa fa-download fa-lg"></i></a>
+  <ul class="sub_menu">
+    <li><a href="https://root.yt/">Root</a></li>
+<li><a href="https://torrentz2.is/">TorrentZ</a></li>
+<li><a href="https://solidtorrents.net/">SolidTorrents</a></li>
+<li><a href="https://1337x.to/home/">1337X</a></li>
+<li><a href="https://rarbgp2p.org/">RARBG</a></li>
+<li><a href="https://btmet.com/">BTMET</a></li>
+<li><a href="https://btdb.eu/">BTDB</a></li>
+<li><a href="https://www.ettvdl.com/home/">ETTV</a></li>
+<li><a href="https://bt4g.org/">BT4G</a></li>
+<li><a href="http://rutor.info/">RuTor</a></li>
+<li><a href="https://ext.to/">EXT</a></li>
+    <li><a href="https://glodls.to/home.php">GloDLS</a></li>
+    <li><a href="https://thepiratebay.org/">PirateBay</a></li>
+    <li><a href="https://torrentgalaxy.to/">TorGalaxy</a></li>
+    <li><a href="https://www.torrentino.download/">TorrentTino</a></li>
+<li><a href="https://www.demonoid.is/">Demonoid</a></li>
+    <li><a href="https://showrss.info/">ShowRSS</a></li>
+    <li><a href="https://www.concen.org/torrents">Concen</a></li>
+    <li><a href="https://academictorrents.com/">Academic</a></li>
+    <li><a href="https://sound-park.world/">SoundPark</a></li>
+<li><a href="https://nyaa.si/">NYAA</a></li>
+    <li><a href="https://mac-torrents.io/">MacTorrents</a></li>
+    <li><a href="https://macapps.to/">MacApps</a></li>
+    <li><a href="https://www.macappdownload.com/">AppKed</a></li>
+    <li><a href="https://macapps.to/">MacApps</a></li>
+<li><a href="https://nmac.to/">NMac</a></li>
+    <li><a href="http://monkrus.ws/">MonKrus</a></li>
+    <li><a href="https://radixx11rce2.blogspot.com/">Radixx11</a></li>
+    <li><a href="https://www.downloadpirate.com/">DownPirate</a></li>
+    <li><a href="http://getintopc.com/">GetintoPC</a></li>
+<li><a href="https://karanpc.com/">Karanpc</a></li>
+    <li><a href="https://www.mutaz.net/free-programs/">Mutaz</a></li>
+    <li><a href="https://free.appnee.com/">AppNee</a></li>
+    <li><a href="https://filecr.com/en/">FileCR</a></li>
+    <li><a href="https://haxnode.com/">Haxnode</a></li>
+<li><a href="https://shareappscrack.com/">ShareApps</a></li>
+    <li><a href="https://crackingpatching.com/">CrackPatch</a></li>
+    <li><a href="https://cracksurl.com/">CrackSurl</a></li>
+    <li><a href="https://izofile.com/">IZOfile</a></li>
+    <li><a href="https://puredl.org/">PureDL</a></li>
+<li><a href="https://www.fcportables.com/">FCportable</a></li>
+    <li><a href="https://www.portablefreeware.com/">FreeWare</a></li>
+    <li><a href="https://rarelust.com/">RareLust</a></li>
+    <li><a href="http://rarefilm.net/">Rarefilm</a></li>
+    <li><a href="https://hevcbay.com/">HEVCbay</a></li>
+<li><a href="https://x265movies.co/">X265Movies</a></li>
+    <li><a href="https://seriesvault.win/">SeriesVault</a></li>
+    <li><a href="https://psarips.eu/">PSARips</a></li>
+    <li><a href="https://snahp.it/">Snahp.it</a></li>
+    <li><a href="https://hdencode.com/">HDencode</a></li>
+    <li><a href="https://worldsrc.org/">Worldsrc</a></li>
+    <li><a href="https://sanet.st/full/">SoftArchive</a></li>
+    <li><a href="https://rlsbb.ru/">ReleaseBB</a></li>
+    <li><a href="https://scnsrc.me/">SceneSource</a></li>
+    <li><a href="https://0dayreleases.com/">0DayReleases</a></li>
+    <li><a href="https://avxhm.se/">AvaxHome</a></li>
+    <li><a href="https://scnlog.me/">Scnlog</a></li>
+    <li><a href="https://volno.org/portal.php">Volno</a></li>
+    <li><a href="https://www.ddlvalley.me/">DDLvalley</a></li>
+    <li><a href="https://slider.kz/">Slider</a></li>
+    <li><a href="https://mp3quack.com/">MP3Quack</a></li>
+    <li><a href="https://www.mp3juices.cc/">MP3Juices</a></li>
+    <li><a href="https://downloads.khinsider.com/">Gamemusic</a></li>
+    <li><a href="http://newalbumreleases.net/">AlbumRLS</a></li>
+    <li><a href="http://freshremix.ru/">Freshmix</a></li>
+<li><a href="https://free-mp3-download.net/">FreeMP3down</a></li>
+    <li><a href="http://mp3guild.com/">MP3Guild</a></li>
+    <li><a href="https://www5.iplusfree.org/">iPlusFree</a></li>
+    <li><a href="https://kingdom-leaks.com/">KingdomLeaks</a></li>
+    <li><a href="https://losslessma.net/">LosslessMA</a></li>
+<li><a href="https://www.pluspremieres.nz/">Premiere</a></li>
+    <li><a href="http://megasearch.co/">MegaSearch</a></li>
+    <li><a href="https://megaddl.co/">MegaDLL</a></li>
+    <li><a href="https://www.catfiles.net/">CatFiles</a></li>
+    <li><a href="https://www.dedigger.com/">DeDigger</a></li>
+<li><a href="https://www.searchftps.net/">NaPalmFTP</a></li>
+    <li><a href="https://www.mmnt.ru/int/">MamontFTP</a></li>
+    <li><a href="https://filepursuit.com/">FilePursuit</a></li>
+    <li><a href="https://ipfs-search.com/">Searchipfs</a></li>
+    <li><a href="https://megaconverter.net/">Megaconverter</a></li>
+<li><a href="https://ripsave.com/">Ripsave</a></li>
+    <li><a href="https://9xbuddy.org/">9xbuddy</a></li>
+    <li><a href="https://sasrip.cf/">SASRip</a></li>
+    <li><a href="https://www.videovor.com/">VideoVor</a></li>
+    <li><a href="https://www.klickaud.co/">KlickAud</a></li>
+<li><a href="https://downloadmusicschool.com/bandcamp/">MusicSchool</a></li>
+    <li><a href="https://docdownloader.com/">DocDown</a></li>
+    <li><a href="https://thetrove.net/">TheTrove</a></li>
+    <li><a href="https://fanart.tv/">FanArt</a></li>
+                </ul>
+</li>
+<li><a href="#"><i class="fa fa-video-camera fa-lg"></i></a>
+<ul class="sub_menu">
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+</li>
+<li><a href="#"><i class="fa fa-gamepad fa-lg"></i></a>
+<ul class="sub_menu">
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+</li>
+<li><a href="#"><i class="fa fa-desktop fa-lg"></i></a>
+  <ul class="sub_menu">
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+</li>
+<li><a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a>
+  <ul class="sub_menu">
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+</li>
+<li><a href="#"><i class="fa fa-play-circle fa-lg"></i></a>
+  <ul class="sub_menu">
+    <li><a href="https://azm.to/">AZM</a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+</li>
+<!--<li><a href=<i class="fa fa-search fa-lg"></i></a>
+<ul>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+</li>-->
+<li><a href="#"><i class="fa fa-users fa-lg"></i></a>
+  <ul class="sub_menu">
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+</li>
+<li><a href="#"><i class="fa fa-code fa-lg"></i></a>
+  <ul class="sub_menu">
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+</li>
+</ul>
+<div>
+
+<!--
+  FULL VIEW IS PRETTY, CHROME IS AWESOME!
+
+  Be sure to try a few!
+
+  Move your mouse to manipulate the rotation a little bit.
+  Click "New shape and variety" to generate a new cloud.
+  Scroll to zoom between z=500 and z=4000
+-->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/188512/OrbitControls.js'></script>
+<script src="./jquery.dropdown.js"></script>
+<script src="./search_engine.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
